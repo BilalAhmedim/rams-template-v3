@@ -1,3 +1,17 @@
+/* Colors */
+
+/* Convention Font Size */
+
+/* Standart Font Size */
+
+/* Break Points Sizes */
+
+/* fonts */
+
+/* Break Points */
+
+/* ClearFix */
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -349,7 +363,77 @@ template {
   display: none;
 }
 
+.row{
+  padding: 0;
+}
+
+.row .col{
+    float: left;
+  }
+
+.row .col-12{
+      width: 100%;
+    }
+
+.row .col-6{
+      width: 50%;
+    }
+
+.row .col-3{
+      width: 100%;
+    }
+
+@media (min-width: 480px) {
+
+.row .col-3{
+        width: 50%
+    }
+  }
+
+@media (min-width: 992px) {
+
+.row .col-3{
+        width: 25%
+    }
+  }
+
+.row .col-2{
+      width: 16.66%;
+    }
+
+.row::after{
+    content: '';
+    clear: both;
+    display: table;
+  }
+
 *{
   box-sizing: border-box;
+}
+
+.header{
+  overflow: hidden;
+  padding-top: 2px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.14);
+}
+
+.header h1{
+    text-align: center;
+    padding: 0;
+    font-family: arial;
+    font-weight: normal;
+  }
+
+@media (min-width: 1024px) {
+
+.header h1{
+      text-align: left;
+      margin: 30px 100px
+  }
+  }
+
+.img-responsive{
+  max-width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=styles.css.map */

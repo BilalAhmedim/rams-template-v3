@@ -1,4 +1,5 @@
+@import './_partials/_variables.css';
+@import './_partials/_mixins.css';
 @import 'normalize.css';
-*{
-  box-sizing: border-box;
-}
+@import './_partials/_responsive-grid.css';
+@import './_partials/_globalization.css';

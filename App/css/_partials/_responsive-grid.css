@@ -1,0 +1,25 @@
+.row{
+  padding: 0;
+  .col{
+    float: left;
+    &-12{
+      width: 100%;
+    }
+    &-6{
+      width: 50%;
+    }
+    &-3{
+      width: 100%;
+      @mixin at-md-mobile{
+        width: 50%
+      }
+      @mixin at-tablet{
+        width: 25%;
+      }
+    }
+    &-2{
+      width: 16.66%;
+    }
+  }
+  @mixin clearfix;
+}

@@ -1,0 +1,18 @@
+/* Colors */
+
+/* Convention Font Size */
+/* Standart Font Size */
+$SFS: 1rem;
+
+/* Break Points Sizes */
+$sm-mobile: 320px;
+$md-mobile: 480px;
+$lg-mobile: 768px;
+$tablet: 992px;
+$sm-desktop: 1024px;
+$md-desktop: 1224px;
+$lg-desktop: 1824px;
+
+/* fonts */
+
+$default-font: arial;
