@@ -347,7 +347,7 @@ header{
 }
 header.sticky{
     height: 60px;
-    background: rgba(240,239,252,0.6);
+    background: rgba(240,239,252,0.9);
   }
 /* box-shadow: 0 4px 10px rgba(0,0,0,.14); */
 header.sticky .primary-nav__logo{
