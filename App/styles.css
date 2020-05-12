@@ -339,8 +339,38 @@ template {
   height: auto;
 }
 header{
+  width: 100%;
+  position: fixed;
+  height: 70px;
   padding: 6.5px;
-  background: rgba(0,0,0,0.3);
+  transition: 800ms ease all;
+}
+header.sticky{
+    height: 60px;
+    background: rgba(240,239,252,0.6);
+  }
+/* box-shadow: 0 4px 10px rgba(0,0,0,.14); */
+header.sticky .primary-nav__logo{
+      width: 56px;
+      height: 47px;
+    }
+header.sticky nav{
+      margin-top: 6px;
+    }
+@media (min-width: 768px) {
+header.sticky nav{
+        margin-top: -2px
+    }
+  }
+header.sticky nav a{
+        font-size: 18px;
+        color: #0000EE;
+      }
+header.sticky .toggle{
+      margin-top: 2px;
+    }
+body{
+  height: 2000px;
 }
 .primary-nav{
   width: 100%;
@@ -349,6 +379,7 @@ header{
   visibility: hidden;
   opacity: 0;
   transition: 300ms ease all;
+  margin-top: 6px;
 
 }
 @media (min-width: 768px) {
@@ -386,7 +417,7 @@ header{
     text-decoration: none;
     margin-left: 50px;
     /* margin-top: 11.5px; */
-    transition: 150ms ease all;
+    transition: 800ms ease all;
   }
 .primary-nav__logo a{
       width: 66px;
@@ -396,7 +427,6 @@ header{
     }
 .primary-nav.show{
     background: #fff;
-    color: #000;
     max-height: 2000px;
     transform: scale(1);
     visibility: visible;
@@ -453,7 +483,7 @@ header{
   height: 42px;
   float: right;
   margin-right: 45px;
-  margin-top: 9px;
+  margin-top: 7px;
   padding: 5px;
   cursor: pointer;
   transition: 300ms ease margin;
