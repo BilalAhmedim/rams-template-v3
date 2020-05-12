@@ -339,6 +339,8 @@ template {
   height: auto;
 }
 header{
+  width: 100%;
+  position: fixed;
   height: 70px;
   padding: 6.5px;
   transition: 800ms ease all;
@@ -346,8 +348,6 @@ header{
 header.sticky{
     height: 60px;
     background: rgba(240,239,252,0.6);
-    width: 100%;
-    position: fixed;
   }
 /* box-shadow: 0 4px 10px rgba(0,0,0,.14); */
 header.sticky .primary-nav__logo{
