@@ -6,7 +6,10 @@ const
   reverse = 'toggle__bar__animate--reverse',
   animate = 'toggle__bar__animate',
   elementUl = document.querySelector('nav'),
-  header = document.querySelector('header')
+  header = document.querySelector('header'),
+  about_textbox_offsetheight  = document.querySelector('.about .col-6').offsetHeight + "px",
+  about_textbox_offsetwidth  = document.querySelector('.about .col-6').offsetWidth + "px",
+  about_image_offsetsize = document.querySelector('.about__image--size')
   ;
 
   const toggle__open = e =>{
@@ -48,3 +51,6 @@ var stickyNav = e =>{
 }
 
 window.addEventListener('scroll', stickyNav);
+
+// about_image_offsetsize.style.height = about_textbox_offsetheight;
+// about_image_offsetsize.style.width = about_textbox_offsetwidth;

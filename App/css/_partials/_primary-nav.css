@@ -15,7 +15,7 @@ header{
     nav{
       margin-top: 6px;
       @mixin at-lg-mobile{
-        margin-top: -2px;;
+        margin-top: -2px;
       }
       a{
         font-size: 18px;
@@ -26,9 +26,6 @@ header{
       margin-top: 2px;
     }
   }
-}
-body{
-  height: 2000px;
 }
 .primary-nav{
   width: 100%;

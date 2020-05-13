@@ -6,7 +6,11 @@
       width: 100%;
     }
     &-6{
-      width: 50%;
+      width: 100%;
+      @mixin at-lg-mobile{
+        width: 50%;
+        float: left;
+      }
     }
     &-3{
       width: 100%;

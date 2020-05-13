@@ -1,0 +1,13 @@
+.about__cta{
+  text-align:center;
+  &--button{
+    font-family: $default-font;
+    background: none;
+    border: 1px solid $hero-secondry;
+    padding: .8rem 1rem;
+    margin: 30px auto;
+    color: $heading-color;
+    text-decoration: none;
+    display: inline-block;
+  }
+}

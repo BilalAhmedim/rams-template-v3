@@ -291,8 +291,14 @@ template {
       width: 100%;
     }
 .row .col-6{
-      width: 50%;
+      width: 100%;
     }
+@media (min-width: 768px) {
+.row .col-6{
+        width: 50%;
+        float: left
+    }
+  }
 .row .col-3{
       width: 100%;
     }
@@ -317,23 +323,48 @@ template {
 *{
   box-sizing: border-box;
 }
-.header{
+.header-bar{
   overflow: hidden;
   padding-top: 2px;
   box-shadow: 0 4px 10px rgba(0,0,0,.14);
 }
-.header h1{
+.header-bar h1{
     text-align: center;
     padding: 0;
     font-family: arial;
     font-weight: normal;
   }
 @media (min-width: 1024px) {
-.header h1{
+.header-bar h1{
       text-align: left;
       margin: 30px 100px
   }
   }
+.header-non-bar{
+  overflow: hidden;
+  padding-top: 2px;
+}
+.header-non-bar h1{
+    text-align: center;
+    padding: 0;
+    font-family: arial;
+    font-weight: normal;
+    color: rgba(0,0,0,0.86);
+  }
+@media (min-width: 1024px) {
+.header-non-bar h1{
+      margin: 30px 0
+  }
+  }
+p.text{
+  font-family: arial;
+  letter-spacing: 1.5px;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 15px 30px;
+  color: rgba(0,0,0,0.56);
+  margin: 0;
+}
 .img-responsive{
   max-width: 100%;
   height: auto;
@@ -369,9 +400,6 @@ header.sticky nav a{
 header.sticky .toggle{
       margin-top: 2px;
     }
-body{
-  height: 2000px;
-}
 .primary-nav{
   width: 100%;
   max-height: 0px;
@@ -769,4 +797,17 @@ body{
 .hero .caption span{
       color: #853828;
     }
+.about__cta{
+  text-align:center;
+}
+.about__cta--button{
+    font-family: arial;
+    background: none;
+    border: 1px solid #853828;
+    padding: .8rem 1rem;
+    margin: 30px auto;
+    color: rgba(0,0,0,0.86);
+    text-decoration: none;
+    display: inline-block;
+  }
 /*# sourceMappingURL=styles.css.map */
