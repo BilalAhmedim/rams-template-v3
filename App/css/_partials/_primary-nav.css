@@ -4,6 +4,7 @@ header{
   height: 70px;
   padding: 6.5px;
   transition: 800ms ease all;
+  z-index: 9999;
   &.sticky{
     height: 60px;
     background: $primary-nav-bg;
