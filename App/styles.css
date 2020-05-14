@@ -810,4 +810,55 @@ header.sticky .toggle{
     text-decoration: none;
     display: inline-block;
   }
+.gallery__container{
+    margin: 0 auto;
+    padding: 30px 50px;
+    display: table;
+    clear: both;
+  }
+@media (min-width: 768px) {
+.gallery__container{
+      padding: 15px 60px;
+  }
+  }
+.gallery__container .gallery__card{
+      margin: 10px;
+      border-radius: 4px;
+      box-shadow: 0px 5px 6px 1px rgba(0,0,0,.14);
+      transition: 100ms box-shadow,100ms transform;
+      transition-timing-function: linear;
+    }
+@media (min-width: 768px) {
+.gallery__container .gallery__card{
+        margin: 15px
+    }
+  }
+@media (min-width: 992px) {
+.gallery__container .gallery__card{
+        margin: 0 25px 25px 0
+    }
+  }
+.gallery__container .gallery__card:hover{
+        transform: scale(1.01);
+        box-shadow: 0px 9px 12px 3px rgba(0,0,0,.14);
+      }
+.gallery__container .gallery__card__inner{
+       width: 100%;
+       border-radius: 0;
+       cursor: pointer;
+     }
+.gallery__container .gallery__card__caption{
+       width: 100%;
+       height: 40px;
+       padding-top: 8.5px;
+       padding-left: 25px;
+       cursor: pointer;
+     }
+.gallery__container .gallery__card__caption h3{
+         padding: 0;
+         margin: 0;
+         font-family: Arial;
+         font-size: 20px;
+         font-weight: normal;
+       }
 /*# sourceMappingURL=styles.css.map */
