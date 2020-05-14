@@ -1,0 +1,74 @@
+.footer__col--2{
+  position: relative;
+  width: 70%;
+  float: left;
+  margin-top: 0;
+}
+.footer__col--1{
+  position: relative;
+  width: 30%;
+  float: left;
+  margin-top: 0;
+}
+
+.footer{
+  padding: 30px;
+  background: #fff;
+  @mixin clearfix;
+  @mixin at-lg-mobile{
+    padding: 40px;
+  }
+  @mixin at-md-desktop{
+    padding: 80px;
+  }
+  &__logo{
+    width: 75px;
+    height: 64px;
+    background: url('./../../Assets/logo.png') no-repeat;
+    background-size: cover;
+    float: left;
+  }
+  &__text{
+    width: 90px;
+    float: left;
+    margin-top: 14px;
+    margin-left: 10px;
+  }
+  &__social-icons{
+    width: 74px;
+    float: right;
+    &__box{
+      width: 32px;
+      height: 32px;
+      background: blue;
+      float: left;
+      a{
+        width: 32px;
+        height: 32px;
+        text-decoration: none;
+        display: block;
+      }
+      @mixin clearfix;
+      &--fb{
+        background: url('../../Assets/Social/facebook.svg') no-repeat;
+        background-size: cover;
+        margin: 0 5px 5px 0;
+      }
+      &--in{
+        background: url('../../Assets/Social/linkedin.svg') no-repeat;
+        background-size: cover;
+        margin: 0 0 5px 5px;
+      }
+      &--tw{
+        background: url('../../Assets/Social/twitter.svg') no-repeat;
+        background-size: cover;
+        margin: 5px 5px 0 0;
+      }
+      &--gp{
+        background: url('../../Assets/Social/facebook.svg') no-repeat;
+        background-size: cover;
+        margin: 5px 0 0 5px;
+      }
+    }
+  }
+}
