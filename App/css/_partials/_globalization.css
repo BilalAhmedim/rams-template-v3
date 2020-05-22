@@ -9,7 +9,7 @@
 
 p.text{
   font-family: $default-font;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   font-size: 18px;
   line-height: 30px;
   padding: 15px 30px;
