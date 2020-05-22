@@ -1,6 +1,7 @@
 header{
   width: 100%;
   position: fixed;
+  top: 0;
   height: 70px;
   padding: 6.5px;
   transition: 800ms ease all;

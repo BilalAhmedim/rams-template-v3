@@ -2,39 +2,11 @@
   box-sizing: border-box;
 }
 
-.header{
-  overflow: hidden;
-  padding-top: 2px;
-  &-bar{
-    box-shadow: 0 4px 10px rgba(0,0,0,.14);
-  }
-  h1{
-    text-align: center;
-    padding: 0;
-    font-family: $default-font;
-    font-weight: normal;
-    @mixin at-sm-desktop{
-      text-align: left;
-      margin: 30px 100px;
-    }
-  }
+.not-home-page{
+  margin-top: 70px;
 }
 
 
-.header-non-bar{
-  overflow: hidden;
-  padding-top: 2px;
-  h1{
-    text-align: center;
-    padding: 0;
-    font-family: $default-font;
-    font-weight: normal;
-    color: $heading-color;
-    @mixin at-sm-desktop{
-      margin: 30px 0;
-    }
-  }
-}
 p.text{
   font-family: $default-font;
   letter-spacing: 1.5px;
