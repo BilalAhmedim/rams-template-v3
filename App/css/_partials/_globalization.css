@@ -7,7 +7,7 @@
 }
 
 
-p.text{
+.text{
   font-family: $default-font;
   letter-spacing: 1px;
   font-size: 18px;
@@ -16,8 +16,19 @@ p.text{
   color: $text-color;
   margin: 0;
 }
+.wrapper{
+  padding: 0 50px;
+  @mixin at-lg-mobile{
+    padding: 0 100px;
+  }
+}
 
 .img-responsive{
   max-width: 100%;
   height: auto;
+}
+
+
+.content-section{
+  padding-bottom: 30px;
 }

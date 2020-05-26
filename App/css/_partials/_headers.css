@@ -9,6 +9,7 @@
     padding: 0;
     font-family: $default-font;
     font-weight: normal;
+    color: $heading-color;
     @mixin at-sm-desktop{
       text-align: left;
       margin: 30px 100px;
