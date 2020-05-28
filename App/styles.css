@@ -994,4 +994,32 @@ header.sticky .toggle{
         background-size: cover;
         margin: 5px 0 0 5px;
       }
+.contact-form form{
+    padding: 10px;
+  }
+.contact-form form::after{
+    content: '';
+    clear: both;
+    display: table;
+  }
+.contact-form label{
+    display: none;
+  }
+.contact-form input{
+    width: calc(100% - 20px);
+    float: left;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #853828;
+    margin: 10px;
+    font-family: arial;
+  }
+.contact-form input[type='submit']{
+      background: #853828;
+      cursor: pointer;
+      color: #fff;
+    }
+.contact-form .half-width{
+    width: calc(50% - 20px);
+  }
 /*# sourceMappingURL=styles.css.map */

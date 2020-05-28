@@ -1,0 +1,29 @@
+.contact-form{
+  form{
+    @mixin clearfix;
+    padding: 10px
+  }
+
+  label{
+    display: none;
+  }
+
+  input{
+    width: calc(100% - 20px);
+    float: left;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid $hero-secondry;
+    margin: 10px;
+    font-family: $default-font;
+    &[type='submit']{
+      background: $hero-secondry;
+      cursor: pointer;
+      color: #fff;
+    }
+  }
+  .half-width{
+    width: calc(50% - 20px);
+  }
+
+}
