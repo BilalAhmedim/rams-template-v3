@@ -370,6 +370,13 @@ template {
       margin: 30px 100px
   }
   }
+.header h2{
+    text-align: center;
+    padding: 0;
+    font-family: arial;
+    font-weight: normal;
+    color: rgba(44,58,71,0.90);
+  }
 .header-non-bar{
   overflow: hidden;
   padding-top: 2px;
