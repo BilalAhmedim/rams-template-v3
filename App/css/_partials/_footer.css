@@ -24,7 +24,7 @@
   &__logo{
     width: 75px;
     height: 64px;
-    background: url('./../../Assets/logo.png') no-repeat;
+    background: url('./../../assets/logo.png') no-repeat;
     background-size: cover;
     float: left;
   }
@@ -50,22 +50,22 @@
       }
       @mixin clearfix;
       &--fb{
-        background: url('../../Assets/Social/facebook.svg') no-repeat;
+        background: url('../../assets/Social/facebook.svg') no-repeat;
         background-size: cover;
         margin: 0 5px 5px 0;
       }
       &--in{
-        background: url('../../Assets/Social/linkedin.svg') no-repeat;
+        background: url('../../assets/Social/linkedin.svg') no-repeat;
         background-size: cover;
         margin: 0 0 5px 5px;
       }
       &--tw{
-        background: url('../../Assets/Social/twitter.svg') no-repeat;
+        background: url('../../assets/Social/twitter.svg') no-repeat;
         background-size: cover;
         margin: 5px 5px 0 0;
       }
       &--gp{
-        background: url('../../Assets/Social/facebook.svg') no-repeat;
+        background: url('../../assets/Social/facebook.svg') no-repeat;
         background-size: cover;
         margin: 5px 0 0 5px;
       }

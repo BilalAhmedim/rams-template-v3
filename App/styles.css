@@ -898,7 +898,7 @@ header.sticky .toggle{
 .footer__logo{
     width: 75px;
     height: 64px;
-    background: url('./../../Assets/logo.png') no-repeat;
+    background: url('./../../assets/logo.png') no-repeat;
     background-size: cover;
     float: left;
   }
@@ -930,22 +930,22 @@ header.sticky .toggle{
     display: table;
   }
 .footer__social-icons__box--fb{
-        background: url('../../Assets/Social/facebook.svg') no-repeat;
+        background: url('../../assets/Social/facebook.svg') no-repeat;
         background-size: cover;
         margin: 0 5px 5px 0;
       }
 .footer__social-icons__box--in{
-        background: url('../../Assets/Social/linkedin.svg') no-repeat;
+        background: url('../../assets/Social/linkedin.svg') no-repeat;
         background-size: cover;
         margin: 0 0 5px 5px;
       }
 .footer__social-icons__box--tw{
-        background: url('../../Assets/Social/twitter.svg') no-repeat;
+        background: url('../../assets/Social/twitter.svg') no-repeat;
         background-size: cover;
         margin: 5px 5px 0 0;
       }
 .footer__social-icons__box--gp{
-        background: url('../../Assets/Social/facebook.svg') no-repeat;
+        background: url('../../assets/Social/facebook.svg') no-repeat;
         background-size: cover;
         margin: 5px 0 0 5px;
       }
