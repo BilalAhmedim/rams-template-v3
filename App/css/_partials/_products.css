@@ -1,7 +1,10 @@
+.slider{
+  margin-bottom: 95px;
+}
 .carousel{
   position: relative;
   height: 500px;
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
 
   &__track-container{
@@ -15,10 +18,12 @@
     position: relative;
     margin: 0;
     padding: 0;
+    height: 100%;
+    @mixin clearfix;
     transition: transform 250ms ease-in;
   }
 
-  &__slide{
+  &-slide{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -27,7 +32,7 @@
 
   &__images{
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
   }
 
@@ -52,22 +57,27 @@
   }
 
   &__nav{
+    width: 100%;
+    text-align: center;
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translatex(-50%);
-    padding: 10px 0;
+    bottom: -94px;
+    /* left: 50%;
+    transform: translatex(-25%); */
   }
 
   &__indicator{
-    border: none;
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     background: rgba(204, 204, 204, .4);
-    margin: 0 8px;
+    margin: 0 5px;
+    opacity: 1;
     cursor: pointer;
+    filter: grayscale(0);
+    transition: transform 250ms ease-in;
     &.current-slide{
-      background: rgba(0,0,0,.80);
+      opacity: .6;
+      border: 1px solid $hero-secondry;
+      filter: grayscale(30%);
     }
   }
 
