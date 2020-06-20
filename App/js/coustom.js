@@ -121,3 +121,33 @@ prevButton.addEventListener('click', left);
 nextButton.addEventListener('click', right);
 
 dotNav.addEventListener('click', dotSlide);
+
+
+// Products Slider Zoomer
+
+const image = document.querySelector('.carousel__images'),
+      imageContainer = document.querySelectorAll('.carousel__images');
+
+const srcSet = e=>{
+  const src = e.getAttribute("data-image-src");
+  e.style.backgroundImage = `url(${src})`;
+  console.log(src);
+}
+imageContainer.forEach(srcSet);
+
+const productZoomer = e =>{
+  let width = image.offsetWidth;
+  let height = image.offsetHeight;
+  let mousex = e.offsetX;
+  let mousey = e.offsetY;
+  
+  let bgPosX = (mousex / width * 100);
+  let bgPosY = (mousey / height * 100);
+  image.style.backgroundPosition = `${bgPosX}%  ${bgPosY}%`;
+}
+
+image.addEventListener('mousemove', productZoomer);
+
+image.addEventListener('mouseleave', e =>{
+  image.style.backgroundPosition = 'center';
+})

@@ -1068,9 +1068,13 @@ header.sticky .toggle{
 .carousel__images{
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: background-size 200ms ease-in;
   }
+.carousel__images:hover{
+      background-size: 160%;
+    }
 .carousel__button{
     position: absolute;
     top: 50%;
