@@ -143,11 +143,12 @@ const productZoomer = e =>{
   
   let bgPosX = (mousex / width * 100);
   let bgPosY = (mousey / height * 100);
-  image.style.backgroundPosition = `${bgPosX}%  ${bgPosY}%`;
+  e.target.style.backgroundPosition = `${bgPosX}%  ${bgPosY}%`;
 }
 
-image.addEventListener('mousemove', productZoomer);
-
-image.addEventListener('mouseleave', e =>{
-  image.style.backgroundPosition = 'center';
+imageContainer.forEach(e=>{
+  e.addEventListener('mousemove', productZoomer);
+  e.addEventListener('mouseleave', event =>{
+    e.style.backgroundPosition = 'center';
+  })
 })
