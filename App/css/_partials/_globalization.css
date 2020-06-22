@@ -15,6 +15,13 @@
   padding: 15px 30px;
   color: $text-color;
   margin: 0;
+  &.dark{
+    color: $heading-color;
+    padding: 10px 15px;
+    span{
+      color: $text-color;
+    }
+  }
 }
 .wrapper{
   padding: 0 50px;
