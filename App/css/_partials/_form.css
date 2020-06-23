@@ -27,3 +27,102 @@
   }
 
 }
+
+.query-form{
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  &__overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.86);
+
+    &__close{
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      font-family: $default-font;
+      font-size: 22px;
+      background: #fff;
+      padding: 8px 13px;
+      border-radius: 100%;
+      cursor: pointer;
+    }
+  }
+  form{
+    width: min-content;
+    height: min-content;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(254,254,255,1);
+    padding: 50px;
+    border-radius: 6px;
+    h2{
+      font-family: $default-font;
+      color: $heading-color;
+      text-align: center;
+      margin-top: 5px;
+      margin-bottom: 30px;
+      font-size: 26px;
+      letter-spacing: 3.5px;
+      font-weight: normal;
+    }
+    input{
+      width: 100%;
+      height: 32px;
+      display: block;
+      font-family: $default-font;
+      border-radius: 0px;
+      background: none;
+      border: none;
+      border-bottom: 1.5px solid $heading-color;
+      margin-bottom: 18px;
+      transition: 200ms ease box-shadow;
+      &:hover{
+        box-shadow: 5px 5px 6px rgba(0,0,0,.14);
+      }
+      &.countrycode , &.number{
+        display: inline-block;
+      }
+      &.countrycode{
+        width: calc(25% - 10px);
+        margin-right: 8px;
+      }
+      &.number{
+        width: calc(75% - 10px);
+        margin-left: 8px;
+      }
+      &.submit{
+        background: $heading-color;
+        color: #fff;
+        border: 0;
+        margin-top: 18px;
+        transition: 200ms ease all;
+        &:hover{
+          background: transparent;
+          border: 1.5px solid $heading-color;
+          color: $heading-color;
+        }
+      }
+    }
+    textarea{
+      display: block;
+      background: none;
+      border: none;
+      border-bottom: 1.5px solid $heading-color;
+      margin: 18px 0;
+      font-family: $default-font;
+      transition: 200ms ease box-shadow;
+      &:hover{
+        box-shadow: 5px 5px 6px rgba(0,0,0,.14);
+      }
+    }
+  }
+}

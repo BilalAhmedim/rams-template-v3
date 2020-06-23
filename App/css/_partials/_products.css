@@ -6,13 +6,13 @@
   height: 500px;
   width: 80%;
   margin: 0 auto;
-  border: 1px solid $heading-color;
-  box-shadow: 0px 0px 15px rgba(0,0,0,.30);
 
   &__track-container{
     position: relative;
     height: 100%;
     overflow: hidden;
+    border: 1px solid $heading-color;
+    box-shadow: 0px 0px 15px rgba(0,0,0,.30);
   }
 
   &__track{
@@ -93,5 +93,23 @@
 .product-description{
   p span{
     text-align: center;
+  }
+}
+
+button.query{
+  background: none;
+  border: 1px solid $heading-color;
+  padding: 12px 10px;
+  color: $heading-color;
+  font-family: $default-font;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 2px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 250ms ease all;
+  &:hover{
+    background: $heading-color;
+    color: #fff;
   }
 }
