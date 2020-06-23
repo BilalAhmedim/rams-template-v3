@@ -384,6 +384,29 @@ template {
     font-weight: normal;
     color: rgba(44,58,71,0.90);
   }
+@media (min-width: 1024px) {
+.header h2{
+      text-align: left;
+      margin: 30px 100px
+  }
+  }
+.header h3{
+    text-align: center;
+    padding: 0;
+    font-family: arial;
+    font-weight: normal;
+    color: rgba(44,58,71,0.90);
+  }
+@media (min-width: 1024px) {
+.header h3{
+      text-align: left;
+      margin: 30px 100px
+  }
+  }
+.header h3 a{
+      text-decoration: none;
+      padding: 3px;
+    }
 .header-non-bar{
   overflow: hidden;
   padding-top: 2px;
@@ -1046,6 +1069,7 @@ header.sticky .toggle{
   height: 500px;
   width: 80%;
   margin: 0 auto;
+  border: 1px solid rgba(44,58,71,0.90);
   box-shadow: 0px 0px 15px rgba(0,0,0,.30);
 
 }
