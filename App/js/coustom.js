@@ -152,3 +152,25 @@ imageContainer.forEach(e=>{
     e.style.backgroundPosition = 'center';
   })
 })
+
+
+// Query Form
+
+const mainForm = document.querySelector('.query-form'),
+      fromOpenButton = document.querySelector('.query'),
+      formCloseButton = mainForm.querySelector('.query-form__overlay__close'),
+      closeOnOverlay = mainForm.querySelector('.query-form__overlay');
+
+
+
+
+const popupForm = e =>{
+  if(mainForm.classList[1] === 'is-closed'){
+    mainForm.classList.remove('is-closed')
+  }else{
+    mainForm.classList.add('is-closed')
+  }
+}
+
+fromOpenButton.addEventListener('click', popupForm);
+formCloseButton.addEventListener('click', popupForm);
